@@ -77,20 +77,20 @@ ARG BUILD_VERSION
 
 # Labels
 LABEL \
-    io.hass.name="${BUILD_NAME}" \
-    io.hass.description="${BUILD_DESCRIPTION}" \
-    io.hass.arch="${BUILD_ARCH}" \
+    io.hass.name="Z-Wave JS UI Secondary" \
+    io.hass.description="Fully configurable Z-Wave JS gateway and control panel (secondary instance)" \
+    io.hass.arch="aarch64" \
     io.hass.type="addon" \
-    io.hass.version=${BUILD_VERSION} \
-    maintainer="Franck Nijhof <frenck@addons.community>" \
-    org.opencontainers.image.title="${BUILD_NAME}" \
-    org.opencontainers.image.description="${BUILD_DESCRIPTION}" \
+    io.hass.version="4.5.0" \
+    maintainer="Grant Kelly <sirfixalot@woh.rr.com>" \
+    org.opencontainers.image.title="Z-Wave JS UI Secondary" \
+    org.opencontainers.image.description="Fully configurable Z-Wave JS gateway and control panel (secondary instance)" \
     org.opencontainers.image.vendor="Home Assistant Community Add-ons" \
     org.opencontainers.image.authors="Franck Nijhof <frenck@addons.community>" \
     org.opencontainers.image.licenses="MIT" \
     org.opencontainers.image.url="https://addons.community" \
-    org.opencontainers.image.source="https://github.com/${BUILD_REPOSITORY}" \
-    org.opencontainers.image.documentation="https://github.com/${BUILD_REPOSITORY}/blob/main/README.md" \
-    org.opencontainers.image.created=${BUILD_DATE} \
+    org.opencontainers.image.source="https://github.com/sirfixalotgk/hassio-addon/zwave-js-ui-secondary" \
+    org.opencontainers.image.documentation="https://github.com/hassio-addons/addon-zwave-js-ui/blob/main/README.md" \
+    org.opencontainers.image.created="2025-07-02T03:05:00Z" \
     org.opencontainers.image.revision=${BUILD_REF} \
-    org.opencontainers.image.version=${BUILD_VERSION}
+    org.opencontainers.image.version="4.5.0"
