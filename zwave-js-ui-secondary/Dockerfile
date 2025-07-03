@@ -89,8 +89,8 @@ LABEL \
     org.opencontainers.image.authors="Franck Nijhof <frenck@addons.community>" \
     org.opencontainers.image.licenses="MIT" \
     org.opencontainers.image.url="https://addons.community" \
-    org.opencontainers.image.source="https://github.com/sirfixalotgk/hassio-addon/zwave-js-ui-secondary" \
-    org.opencontainers.image.documentation="https://github.com/hassio-addons/addon-zwave-js-ui/blob/main/README.md" \
-    org.opencontainers.image.created="2025-07-02T03:05:00Z" \
+    org.opencontainers.image.source="https://github.com/${BUILD_REPOSITORY}" \
+    org.opencontainers.image.documentation="https://github.com/${BUILD_REPOSITORY}/blob/main/README.md" \
+    org.opencontainers.image.created=${BUILD_DATE} \
     org.opencontainers.image.revision=${BUILD_REF} \
-    org.opencontainers.image.version="4.5.0"
+    org.opencontainers.image.version=${BUILD_VERSION}
