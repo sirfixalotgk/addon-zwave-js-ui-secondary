@@ -1,9 +1,9 @@
 ---
 name: Z-Wave JS UI Secondary
-version: dev
-slug: zwavejs2mqtt_sec
+version: 4.5.0
+slug: zwavejs2mqtt
 description: Fully configurable Z-Wave JS gateway and control panel
-url: https://github.com/sirfixalotgk/addon-zwave-js-ui-secondary
+url: https://github.com/sirfixalotgk/zwave-js-ui-secondary
 codenotary: codenotary@frenck.dev
 ingress: true
 ingress_stream: true
@@ -13,20 +13,21 @@ startup: system
 init: false
 timeout: 30
 arch:
-  - aarch64
-  - amd64
-  - armv7
+- aarch64
+- amd64
+- armv7
 discovery:
-  - zwave_js
+- zwave_js
 services:
-  - mqtt:want
+- mqtt:want
 uart: true
 udev: true
 map:
-  - share:rw
+- share:rw
 schema:
   log_level: list(trace|debug|info|notice|warning|error|fatal)?
 ports:
   3030/tcp: null
 ports_description:
   3030/tcp: Z-Wave JS communication
+image: ghcr.io/hassio-addons/zwave-js-ui/{arch}
